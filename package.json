@@ -1,0 +1,14 @@
+{
+  "name": "demo-slidev",
+  "private": true,
+  "scripts": {
+    "start": "slidev --open",
+    "build": "slidev build --base /dist",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.22.5",
+    "@slidev/theme-default": "^0.6.0",
+    "@slidev/theme-seriph": "^0.6.0"
+  }
+}

@@ -1,0 +1,21 @@
+stages:
+  - deploy
+
+.docker_runner_config: &docker_runner_config
+  tags:
+    - docker-runner
+
+pages:
+  stage: deploy
+  image: node:latest
+  <<: *docker_runner_config
+  script:
+    - yarn install --frozen-lockfile
+    - yarn build
+    - mv dist public
+  only:
+    - master
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 day
