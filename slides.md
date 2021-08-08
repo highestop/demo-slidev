@@ -1,13 +1,16 @@
 ---
-theme: default
+theme: apple-basic
 highlighter: shiki
-routerMode: hash
+lineNumbers: true
 class: text-center
+routerMode: hash
+download: true
 title: Welcome
 ---
 
 ## Welcome
 
 <!--
-我们的
+https://cn.sli.dev/custom/
+https://cn.sli.dev/themes/gallery.html
 -->
